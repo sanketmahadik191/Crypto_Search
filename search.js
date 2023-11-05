@@ -16,7 +16,7 @@ searchbtn.addEventListener("click", async() => {
 
 function appendcards(data) {
     if (data.length == 0) {
-        coinContainer.innerHTML = `<h1>No Coin Found</h1>`;
+        coinContainer.innerHTML = `<h1 style="color:red;">No Coin Found</h1>`;
     } else {
         coinContainer.innerHTML = ``;
         let index = 1;
@@ -31,7 +31,7 @@ function appendcards(data) {
             <img src="${ele.thumb}" alt="">
             <h3>${ele.name}</h3>
             <h3>(${ele.symbol})</h3>
-            <a id=${ele.id}"></a>`;
+            <a href="./deatail.html?id=${ele.id}">More Info</a>`;
             coinContainer.appendChild(div);
             index = parseInt(index) + 1;
         });
