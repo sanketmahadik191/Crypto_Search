@@ -29,7 +29,7 @@ function appendcards(data) {
             div.innerHTML = `
             <p>${index}</p>
             <img src="${ele.thumb}" alt="">
-            <h3>${ele.name}</h3>
+            <h3 >${ele.name}</h3>
             <h3>(${ele.symbol})</h3>
             <a href="./deatail.html?id=${ele.id}">More Info</a>`;
             coinContainer.appendChild(div);
